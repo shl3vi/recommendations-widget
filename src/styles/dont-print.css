@@ -1,0 +1,6 @@
+@media print {
+  #taboola-recommendations-widget,
+  #taboola-recommendations-widget * {
+    display: none !important;
+  }
+}

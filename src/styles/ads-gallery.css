@@ -1,0 +1,51 @@
+.taboola-ads-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  column-gap: 5px;
+  row-gap: 1em;
+  padding: 30px;
+}
+
+@media (max-width: 1000px) {
+  .taboola-ads-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .taboola-ads-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.taboola-ads-gallery a {
+  color: inherit;
+}
+
+.taboola-ad-img-container {
+  position: relative;
+  width: 100%;
+}
+
+.taboola-ad-img-container:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.taboola-ad-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.taboola-ad-desc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
